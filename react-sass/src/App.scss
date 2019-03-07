@@ -1,0 +1,51 @@
+$colors: (
+  c1: #011627, 
+  c2: #F71735,
+  c3: #41EAD4,
+  c4: #FDFFFC,
+  c5: #FF9F1C,
+);
+
+@function color($color-name){
+  @return map-get($colors, $color-name)
+};
+
+$desktop: 840px;
+
+@mixin desktop{
+  @media(min-width: #{$desktop}){
+    @content; 
+  }
+}
+
+body, html{
+  height: 100%;
+}
+
+body{
+  background: color(c4);
+  margin: 0;
+}
+section .box{
+  height: 400px; 
+  width: 100%;
+  background: color(c1);
+  ul{
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+    background: color(c2);
+    li{
+      margin-bottom: 10px; 
+      strong{
+        display: inline-block;
+        margin-left: max(40px);
+        margin-top: 10px;
+        font-size: 30px;
+        font-weight: 300;
+        color: color(c5)
+      }
+    }
+  }
+}
+

@@ -1,0 +1,35 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  background: #FDFFFC;
+  margin: 0;
+}
+
+section .box {
+  height: 400px;
+  width: 100%;
+  background: #011627;
+}
+
+section .box ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #F71735;
+}
+
+section .box ul li {
+  margin-bottom: 10px;
+}
+
+section .box ul li strong {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 300;
+  color: #FF9F1C;
+}
+/*# sourceMappingURL=App.css.map */
